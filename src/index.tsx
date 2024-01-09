@@ -1,20 +1,12 @@
-import './index.scss';
-import { createRoot } from 'react-dom/client';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import Shapes from './Shapes';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-createRoot(document.getElementById('root') as HTMLElement).render(
-  <Canvas camera={{position:[0,0,10], fov:60}} shadows>
-    <OrbitControls enableRotate={true} />
-    <ambientLight intensity={0.1} />
-    <pointLight position={[-1, -2, 4]} />
-    <directionalLight
-      position={[-1, 3, 5]}
-      color={0xccddff}
-      intensity={0.8}
-      castShadow
-    />
-    <Shapes />
-  </Canvas>
-)
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
