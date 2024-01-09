@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.a9d1c6f6.css","mappings":"AAAA,EACE,sBAGF,KACE,yBACA,SAGF,OACE,aACA","sources":["index.scss"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: rgb(43, 38, 44);\n  margin: 0;\n}\n\ncanvas {\n  height: 100vh;\n  width: 100vw;\n}\n"],"names":[],"sourceRoot":""}
