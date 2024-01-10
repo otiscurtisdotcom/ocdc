@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -13,5 +13,43 @@ body {
   background-color: #231450;
   background: linear-gradient(90deg, rgba(35,20,80,1) 0%, rgba(32,29,41,1) 100%);
   color: white;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Mono', monospace;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.wrapper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vh;
+}
+
+p,
+a {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+span {
+  width: 30px;
+}
+
+a {
+  color: lemonchiffon;
+  text-decoration: none;
+
+  &:hover {
+    color: teal;
+  }
 }
